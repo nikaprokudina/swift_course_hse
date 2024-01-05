@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZj-jB-15G">
+                                <rect key="frame" x="16" y="75" width="361" height="32"/>
+                                <segments>
+                                    <segment title="work"/>
+                                    <segment title="food"/>
+                                    <segment title="sleep"/>
+                                </segments>
+                                <connections>
+                                    <action selector="catDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="COh-5a-Wl6"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_working" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-QY-Fhb">
+                                <rect key="frame" x="30" y="70.666666666666686" width="333" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEp-Yn-7mj">
+                                <rect key="frame" x="152.66666666666666" y="681" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="L3H-8H-Hpv">
+                                <rect key="frame" x="28" y="735" width="337" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangeSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="a88-5i-zmq"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XaG-UV-S3b">
+                                <rect key="frame" x="95" y="159" width="203" height="32"/>
+                                <segments>
+                                    <segment title="Original"/>
+                                    <segment title="Retro"/>
+                                    <segment title="Invert"/>
+                                </segments>
+                                <connections>
+                                    <action selector="filterChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="tXi-y5-3jL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="tintColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u4b-QY-Fhb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Cdi-4A-oGQ"/>
+                            <constraint firstItem="L3H-8H-Hpv" firstAttribute="top" secondItem="NEp-Yn-7mj" secondAttribute="bottom" constant="33" id="Cp9-nB-oVs"/>
+                            <constraint firstItem="yZj-jB-15G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="FPF-XU-doK"/>
+                            <constraint firstItem="L3H-8H-Hpv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LFE-Lw-WHc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L3H-8H-Hpv" secondAttribute="bottom" constant="53" id="Oj6-7V-LTn"/>
+                            <constraint firstItem="XaG-UV-S3b" firstAttribute="top" secondItem="yZj-jB-15G" secondAttribute="bottom" constant="53" id="Qlz-hv-ipq"/>
+                            <constraint firstItem="NEp-Yn-7mj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZDg-1D-F14"/>
+                            <constraint firstItem="u4b-QY-Fhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="g6H-yF-Ioo"/>
+                            <constraint firstItem="u4b-QY-Fhb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hxT-9P-0j4"/>
+                            <constraint firstItem="yZj-jB-15G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m6g-RS-lLP"/>
+                            <constraint firstItem="L3H-8H-Hpv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="s9A-ZF-m4b"/>
+                            <constraint firstItem="XaG-UV-S3b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uux-WY-OYa"/>
+                            <constraint firstItem="yZj-jB-15G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vig-Iy-eW1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="u4b-QY-Fhb" id="rZ4-uL-YYJ"/>
+                        <outlet property="filterMode" destination="XaG-UV-S3b" id="hnw-KO-yjk"/>
+                        <outlet property="quote" destination="NEp-Yn-7mj" id="5hc-7w-iQV"/>
+                        <outlet property="sliderSize" destination="L3H-8H-Hpv" id="Ma0-JZ-rND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat_working" width="736" height="736"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
