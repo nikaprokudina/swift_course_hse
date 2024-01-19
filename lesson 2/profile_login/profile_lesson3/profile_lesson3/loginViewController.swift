@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class loginViewController: UIViewController {
     
@@ -120,16 +121,16 @@ final class loginViewController: UIViewController {
     
     @objc private func login(){
 //        , = &&
-        guard let email = emailTextField.text,
-              let password = passwordTextField.text
-        else {return}
-        
-        emailTextField.isValid = emailValid(email: email)
-        passwordTextField.isValid = passwordIsValid(password: password)
-        
-        guard emailValid(email: email),
-              passwordIsValid(password: password)
-        else {return}
+//        guard let email = emailTextField.text,
+//              let password = passwordTextField.text
+//        else {return}
+//        
+//        emailTextField.isValid = emailValid(email: email)
+//        passwordTextField.isValid = passwordIsValid(password: password)
+//        
+//        guard emailValid(email: email),
+//              passwordIsValid(password: password)
+//        else {return}
         
         let profileVC = ProfileViewController()
         profileVC.modalTransitionStyle = .flipHorizontal

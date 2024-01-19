@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24002D152B56DF6E004E39C5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 24002D142B56DF6E004E39C5 /* SnapKit */; };
+		24002D172B56DF6E004E39C5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 24002D162B56DF6E004E39C5 /* SnapKit-Dynamic */; };
+		24002D192B56E5F6004E39C5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24002D182B56E5F6004E39C5 /* ProfileHeaderView.swift */; };
 		246F22B82B3B2FCF006B53B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F22B72B3B2FCF006B53B9 /* AppDelegate.swift */; };
 		246F22BA2B3B2FCF006B53B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F22B92B3B2FCF006B53B9 /* SceneDelegate.swift */; };
 		246F22BC2B3B2FCF006B53B9 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F22BB2B3B2FCF006B53B9 /* loginViewController.swift */; };
@@ -18,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24002D182B56E5F6004E39C5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		246F22B42B3B2FCF006B53B9 /* profile_lesson3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = profile_lesson3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246F22B72B3B2FCF006B53B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		246F22B92B3B2FCF006B53B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24002D152B56DF6E004E39C5 /* SnapKit in Frameworks */,
+				24002D172B56DF6E004E39C5 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 			children = (
 				246F22CC2B3B343E006B53B9 /* UIValidatableTextField.swift */,
 				246F22CE2B3B3499006B53B9 /* UIInsetedTextField.swift */,
+				24002D182B56E5F6004E39C5 /* ProfileHeaderView.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -97,6 +104,10 @@
 			dependencies = (
 			);
 			name = profile_lesson3;
+			packageProductDependencies = (
+				24002D142B56DF6E004E39C5 /* SnapKit */,
+				24002D162B56DF6E004E39C5 /* SnapKit-Dynamic */,
+			);
 			productName = profile_lesson3;
 			productReference = 246F22B42B3B2FCF006B53B9 /* profile_lesson3.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 246F22AB2B3B2FCF006B53B9;
+			packageReferences = (
+				24002D132B56DF6E004E39C5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 246F22B52B3B2FCF006B53B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +169,7 @@
 				246F22BC2B3B2FCF006B53B9 /* loginViewController.swift in Sources */,
 				246F22B82B3B2FCF006B53B9 /* AppDelegate.swift in Sources */,
 				246F22CF2B3B3499006B53B9 /* UIInsetedTextField.swift in Sources */,
+				24002D192B56E5F6004E39C5 /* ProfileHeaderView.swift in Sources */,
 				246F22BA2B3B2FCF006B53B9 /* SceneDelegate.swift in Sources */,
 				246F22CD2B3B343E006B53B9 /* UIValidatableTextField.swift in Sources */,
 			);
@@ -302,6 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = profile_lesson3/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To get avatar";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -329,6 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = profile_lesson3/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To get avatar";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -369,6 +386,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24002D132B56DF6E004E39C5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit?ysclid=lrgjg3i4x584505561";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24002D142B56DF6E004E39C5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24002D132B56DF6E004E39C5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		24002D162B56DF6E004E39C5 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24002D132B56DF6E004E39C5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 246F22AC2B3B2FCF006B53B9 /* Project object */;
 }
